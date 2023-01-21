@@ -48,32 +48,97 @@ footer .ico span{display: inline-block;overflow: hidden;width: 0;text-indent: -9
 	footer .ico{margin: 26px 0 0 0}
 	footer .ico a{margin-right: 25px;font-size: 30px;}
 } /* Media query Close */
-/* main-selector-icon -- 상현 */
-/* .main_selector{text-align: center; border: 1px solid; height: 130px;} */
-.main_selector{border: 1px solid;float: center; text-align: center; height: 290px;
+/*header-Jang*/
+body {
+    margin: 0;
 }
-.main_selector ul {font-size: 12px; list-style: none;
-    /* display: inline-block; */
-    padding-left: 0px;border: 1px blue;
-}
-.main_selector li{
-    display: inline-block;
-    margin-inline: 20px; margin-block: 50px;
-    padding: 50px;
-    /* text-align: center; */}
-.main_selector .exhibit_icon {padding: 25px; padding-top: 10px;} /*아이콘 크기 조정 -> padding 조정*/
-.main_selector .concert_icon {padding: 25px; padding-top: 10px;}
-.main_selector .fest_icon {padding: 25px; padding-top: 10px;}
-.main_selector .pj_icon {padding: 25px; padding-top: 10px;}
 
-.main_selector ul li p{font-size: 15px ;text-align: center;position: relative; top: 25px;}
-.main_selector ul li a{text-decoration: none;}
-/* 아이콘 이미지 삽입 */
-.main_selector .exhibit_icon {background: url('/images/exhibition.png') no-repeat;
-    background-size: 100% auto;}
-.main_selector .concert_icon {background: url('/images/concert.png') no-repeat;
-    background-size: 100% auto;}
-.main_selector .fest_icon {background: url('/images/festival.png') no-repeat;
-    background-size: 100% auto;}
-.main_selector .pj_icon {background: url('/images/project.png') no-repeat;
-    background-size: 100% auto;}
+a {
+    text-decoration: none;
+    color: white;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: pink;
+    padding: 8px 12px;
+}
+
+.header_logo {
+    font-size: 24px;
+    color: white;
+}
+
+.header_logo i {
+    color: azure;
+}
+
+.header_menu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.header_menu li {
+    padding: 8px 12px;
+}
+
+.header_menu li:hover {
+    background-color: burlywood;
+    border-radius: 4px;
+}
+
+.header_login {
+    list-style: none;
+    color: white;
+    display: flex;
+    padding-left: 0;
+}
+
+.header_login li {
+    padding: 8px 12px;
+}
+ .header_bars {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: burlywood;
+ }
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 12px;
+    }
+
+    .header_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header_menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header_login {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header_bars {
+        display: block;
+    }
+
+    .header_menu.active,
+    .header_login.active {
+        display: flex;
+    }
+}
+/*haed-Jang-end*/

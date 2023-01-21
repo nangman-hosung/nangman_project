@@ -27,9 +27,9 @@ footer .ico a{display: inline-block;float: left;margin-right: 10px;font-size: 22
 footer .ico span{display: inline-block;overflow: hidden;width: 0;text-indent: -9999px}
 .btn_go_top{display:inline-block;display:none;position:fixed;bottom:15px;right:15px;z-index:20;width:40px;height:40px;border:none;background:url('//image.goodchoice.kr/images/web_v3/ico_top.png') 0 0 no-repeat;background-size:40px auto;text-indent:-9999px}
 
-@media all and (min-width:1024px){
-	footer{overflow:hidden;clear:both;position:relative;margin-top:120px;padding:63px 31px 40px 31px !important;border-top:1px solid rgba(0,0,0,0.08);background:rgb(245,245,245);font-size:13px;line-height:20px;color:rgba(0,0,0,0.38)}
-	footer .align{width:1024px;margin:0 auto}
+@media all and (min-width:768px){
+	footer{overflow:hidden;clear:both;position:relative;margin-top:160px;padding:10px 31px 10px 15px !important;border-top:1px solid rgba(0,0,0,0.08);background:rgb(245,245,245);font-size:13px;line-height:20px;color:rgba(0,0,0,0.38)}
+	footer .align{width:768px;margin:0 auto}
 	footer a{color:rgba(0,0,0,0.38)}
 	footer .link{overflow:hidden}
 	footer .link li{float:left; margin-bottom:5px; line-height:normal}
@@ -41,71 +41,65 @@ footer .ico span{display: inline-block;overflow: hidden;width: 0;text-indent: -9
 	footer .link li:nth-child(4) span, footer .link li:nth-child(7) span {display:inline-block;}
 	footer .link li:nth-child(5),footer .link li:nth-child(8){clear:none}
 	footer .link li:last-child{margin-bottom:0}
-	footer p{clear:both;padding:37px 0 24px 0}
+	footer p{clear:both;padding:10px 0 10px 0}
 	footer p b{display:inline-block;margin-right:10px}
 	footer address{line-height:22px}
 	footer address span{display:block;padding-bottom:7px}
-	footer .ico{margin: 26px 0 0 0}
-	footer .ico a{margin-right: 25px;font-size: 30px;}
+	
 } /* Media query Close */
 /*header-Jang*/
-body {
-    margin: 0;
-}
 
-a {
-    text-decoration: none;
-    color: white;
-}
+body {margin: 0;}
+
+.header_menu a {text-decoration: none;color: black;}
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: pink;
+    background-color: white;
     padding: 8px 12px;
+    border-bottom: 1px solid gray;
+    box-shadow: 0 1px 5px gray;
+    position: fixed;
+    text-align: center;
+    width: 100%;
 }
 
-.header_logo {
-    font-size: 24px;
-    color: white;
-}
 
-.header_logo i {
-    color: azure;
-}
+.header_logo {font-size: 24px;position: relative; left: 150px;}
+
+.header_logo a{text-decoration: none;color: rgb(30,157,257);}
+
+
+.header_logo i {color: rgb(30,157,257);}
 
 .header_menu{
     display: flex;
     list-style: none;
     padding-left: 0;
+    color: black;
 }
 
 .header_menu li {
     padding: 8px 12px;
+    
 }
 
-.header_menu li:hover {
+/* .header_menu li:hover {
     background-color: burlywood;
     border-radius: 4px;
-}
+} */
 
-.header_login {
-    list-style: none;
-    color: white;
-    display: flex;
-    padding-left: 0;
-}
 
-.header_login li {
-    padding: 8px 12px;
-}
  .header_bars {
     display: none;
     position: absolute;
     right: 32px;
     font-size: 24px;
-    color: burlywood;
+    color: skyblue;
  }
+
+ 
 
 @media screen and (max-width: 768px) {
     .header {
@@ -113,6 +107,8 @@ a {
         align-items: flex-start;
         padding: 8px 12px;
     }
+    
+    
 
     .header_menu {
         display: none;
@@ -126,11 +122,13 @@ a {
         text-align: center;
     }
 
-    .header_login {
+    /* .header_login {
         display: none;
         justify-content: center;
         width: 100%;
-    }
+        position: absolute; left: 600px;
+        padding: 50px;
+    } */
 
     .header_bars {
         display: block;
@@ -141,4 +139,34 @@ a {
         display: flex;
     }
 }
+
 /*haed-Jang-end*/
+/* main-selector-icon -- 상현 */
+/* .main_selector{text-align: center; border: 1px solid; height: 130px;}  */
+.main_selector{float: center; text-align: center; height: 290px;
+}
+.main_selector ul {font-size: 12px; list-style: none;
+    /* display: inline-block; */
+    padding-left: 0px;border: 1px blue;
+}
+.main_selector li{
+    display: inline-block;
+    margin-inline: 20px; margin-block: 50px;
+    padding: 50px;
+    /* text-align: center; */}
+.main_selector .exhibit_icon {padding: 25px; padding-top: 10px;} /*아이콘 크기 조정 -> padding 조정*/
+.main_selector .concert_icon {padding: 25px; padding-top: 10px;}
+.main_selector .fest_icon {padding: 25px; padding-top: 10px;}
+.main_selector .pj_icon {padding: 25px; padding-top: 10px;}
+
+.main_selector ul li p{font-size: 15px ;text-align: center;position: relative; top: 25px;}
+.main_selector ul li a{text-decoration: none;}
+/* 아이콘 이미지 삽입 */
+.main_selector .exhibit_icon {background: url('images/exhibition.png') no-repeat;
+    background-size: 100% auto;}
+.main_selector .concert_icon {background: url('images/concert.png') no-repeat;
+    background-size: 100% auto;}
+.main_selector .fest_icon {background: url('images/festival.png') no-repeat;
+    background-size: 100% auto;}
+.main_selector .pj_icon {background: url('images/project.png') no-repeat;
+    background-size: 100% auto;}

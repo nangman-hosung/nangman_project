@@ -48,7 +48,7 @@ footer .ico span{display: inline-block;overflow: hidden;width: 0;text-indent: -9
 	footer .ico{margin: 26px 0 0 0}
 	footer .ico a{margin-right: 25px;font-size: 30px;}
 } /* Media query Close */
-
+/*header-Jang*/
 body {
     margin: 0;
 }
@@ -141,3 +141,4 @@ a {
         display: flex;
     }
 }
+/*haed-Jang-end*/
